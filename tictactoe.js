@@ -43,6 +43,7 @@ const disableBoxes=()=>{
     }
 };
 
+// function to enable boxes
 const enableBoxes=()=>{
     for(let box of boxes){
         box.disabled=false;
@@ -56,12 +57,14 @@ const showDraw = () => {
     disableBoxes();
 };
 
+// function to show the winner
 const showWinner=(winner)=>{
     msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     disableBoxes();
 }
 
+/// function to check the winner
 const checkWinner=()=>{
 
     let winnerFound = false;
